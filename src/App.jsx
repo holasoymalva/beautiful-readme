@@ -1,10 +1,15 @@
 import React from 'react';
 import BeautifulReadme from './components/BeautifulReadme';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <BeautifulReadme />
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      <div className="flex-grow">
+        <BeautifulReadme />
+      </div>
+      <Footer />
     </div>
   );
 }
